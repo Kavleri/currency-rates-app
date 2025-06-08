@@ -13,7 +13,7 @@ function App() {
   const [historicalData, setHistoricalData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // 1. Ambil daftar mata uang saat aplikasi pertama kali dimuat
+  
   useEffect(() => {
     const getCurrencies = async () => {
       const availableCurrencies = await fetchCurrencies();
@@ -23,7 +23,7 @@ function App() {
     getCurrencies();
   }, []);
 
-  // 2. Ambil kurs terbaru dan data historis setiap kali mata uang berubah
+  
   useEffect(() => {
     if (fromCurrency && toCurrency) {
       const getRates = async () => {
@@ -38,7 +38,7 @@ function App() {
     }
   }, [fromCurrency, toCurrency]);
 
-  // Hitung jumlah yang dikonversi, hanya dihitung ulang jika `amount` atau `rate` berubah
+  
   const convertedAmount = useMemo(() => amount * rate, [amount, rate]);
 
   if (isLoading && currencies.length === 0) {
