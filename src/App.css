@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+/* ... (salin sisa kode CSS dari jawaban awal saya) ... */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.App-header h1 { margin: 0; font-size: 2.5rem; }
+.App-footer { margin-top: 2rem; padding: 10px; font-size: 0.8rem; color: #888; }
+
+.converter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.input-group, .result-group { display: flex; flex-direction: column; align-items: center; }
+input, select { padding: 10px; font-size: 1.2rem; border-radius: 5px; border: 1px solid #ddd; margin-top: 5px; }
+.amount-input { width: 150px; text-align: center; }
+.equals-sign { font-size: 2.5rem; font-weight: bold; color: #282c34; }
+.converted-amount { font-size: 2rem; font-weight: bold; margin: 0; color: #4CAF50; min-height: 48px; }
+.chart-container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.chart-loading, .loading-indicator { padding: 2rem; font-size: 1.2rem; font-weight: bold; }
